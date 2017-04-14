@@ -7,24 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		953E3EEF1E50DFC200AA5AC6 /* ReminderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E3EEE1E50DFC200AA5AC6 /* ReminderWidget.swift */; };
-		955ABCC81E11CDB0007C37E8 /* BatteryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ABCC71E11CDB0007C37E8 /* BatteryWidget.swift */; };
 		955ABCCB1E11CEC5007C37E8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955ABCCA1E11CEC5007C37E8 /* IOKit.framework */; };
 		955ABCCD1E11CECC007C37E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955ABCCC1E11CECC007C37E8 /* Cocoa.framework */; };
-		957ECB5A1E0A393F002D0648 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ECB591E0A393F002D0648 /* CircleView.swift */; };
 		95865EAF1E031FD3001855D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95865EAE1E031FD3001855D8 /* AppDelegate.swift */; };
 		95865EB31E031FD3001855D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95865EB21E031FD3001855D8 /* Assets.xcassets */; };
 		95865EB61E031FD3001855D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95865EB41E031FD3001855D8 /* Main.storyboard */; };
-		95865EC11E031FD3001855D8 /* desktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95865EC01E031FD3001855D8 /* desktopTests.swift */; };
-		95865ECC1E031FD3001855D8 /* desktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95865ECB1E031FD3001855D8 /* desktopUITests.swift */; };
 		95F083961E0739A70082C57F /* SubDesktopWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F083911E0739A70082C57F /* SubDesktopWindow.swift */; };
-		95F083971E0739A70082C57F /* TimerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F083921E0739A70082C57F /* TimerWidget.swift */; };
 		95F083981E0739A70082C57F /* UserInterfaceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F083931E0739A70082C57F /* UserInterfaceConstants.swift */; };
 		95F083991E0739A70082C57F /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F083941E0739A70082C57F /* Widget.swift */; };
 		95F0839C1E0748520082C57F /* WidgetBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0839B1E0748520082C57F /* WidgetBackgroundView.swift */; };
-		95F0839F1E076A330082C57F /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0839E1E076A330082C57F /* WeatherWidget.swift */; };
-		95FCD35E1E514B300043C8AA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FCD35D1E514B300043C8AA /* LocationManager.swift */; };
 		95FFF1911E0B555900A1164A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FFF1901E0B555900A1164A /* Extensions.swift */; };
+		FAA4DC411EA0C993002A25AB /* BarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4DC401EA0C993002A25AB /* BarWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,43 +26,34 @@
 			containerPortal = 95865EA31E031FD2001855D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 95865EAA1E031FD2001855D8;
-			remoteInfo = desktop;
+			remoteInfo = conkme;
 		};
 		95865EC81E031FD3001855D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95865EA31E031FD2001855D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 95865EAA1E031FD2001855D8;
-			remoteInfo = desktop;
+			remoteInfo = conkme;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		953E3EEE1E50DFC200AA5AC6 /* ReminderWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderWidget.swift; sourceTree = "<group>"; };
-		955ABCC71E11CDB0007C37E8 /* BatteryWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryWidget.swift; sourceTree = "<group>"; };
 		955ABCCA1E11CEC5007C37E8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		955ABCCC1E11CECC007C37E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		955ABCCE1E11CF9A007C37E8 /* desktop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "desktop-Bridging-Header.h"; sourceTree = "<group>"; };
-		957ECB591E0A393F002D0648 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		95865EAB1E031FD3001855D8 /* desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		955ABCCE1E11CF9A007C37E8 /* conkme-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "conkme-Bridging-Header.h"; sourceTree = "<group>"; };
+		95865EAB1E031FD3001855D8 /* conkme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conkme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95865EAE1E031FD3001855D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95865EB21E031FD3001855D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95865EB51E031FD3001855D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95865EB71E031FD3001855D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95865EBC1E031FD3001855D8 /* desktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desktopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95865EC01E031FD3001855D8 /* desktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desktopTests.swift; sourceTree = "<group>"; };
-		95865EC21E031FD3001855D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95865EC71E031FD3001855D8 /* desktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desktopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95865ECB1E031FD3001855D8 /* desktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desktopUITests.swift; sourceTree = "<group>"; };
-		95865ECD1E031FD3001855D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95865EBC1E031FD3001855D8 /* conkmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = conkmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95865EC71E031FD3001855D8 /* conkmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = conkmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F083911E0739A70082C57F /* SubDesktopWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubDesktopWindow.swift; sourceTree = "<group>"; };
-		95F083921E0739A70082C57F /* TimerWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerWidget.swift; sourceTree = "<group>"; };
 		95F083931E0739A70082C57F /* UserInterfaceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceConstants.swift; sourceTree = "<group>"; };
 		95F083941E0739A70082C57F /* Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		95F0839B1E0748520082C57F /* WidgetBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetBackgroundView.swift; sourceTree = "<group>"; };
-		95F0839E1E076A330082C57F /* WeatherWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
-		95FCD35D1E514B300043C8AA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		95FFF1901E0B555900A1164A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAA4DC401EA0C993002A25AB /* BarWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,26 +95,24 @@
 		95865EA21E031FD2001855D8 = {
 			isa = PBXGroup;
 			children = (
-				95865EAD1E031FD3001855D8 /* desktop */,
-				95865EBF1E031FD3001855D8 /* desktopTests */,
-				95865ECA1E031FD3001855D8 /* desktopUITests */,
+				95865EAD1E031FD3001855D8 /* conkme */,
 				95865EAC1E031FD3001855D8 /* Products */,
 				955ABCC91E11CEC5007C37E8 /* Frameworks */,
-				955ABCCE1E11CF9A007C37E8 /* desktop-Bridging-Header.h */,
+				955ABCCE1E11CF9A007C37E8 /* conkme-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
 		95865EAC1E031FD3001855D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95865EAB1E031FD3001855D8 /* desktop.app */,
-				95865EBC1E031FD3001855D8 /* desktopTests.xctest */,
-				95865EC71E031FD3001855D8 /* desktopUITests.xctest */,
+				95865EAB1E031FD3001855D8 /* conkme.app */,
+				95865EBC1E031FD3001855D8 /* conkmeTests.xctest */,
+				95865EC71E031FD3001855D8 /* conkmeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95865EAD1E031FD3001855D8 /* desktop */ = {
+		95865EAD1E031FD3001855D8 /* conkme */ = {
 			isa = PBXGroup;
 			children = (
 				95865EAE1E031FD3001855D8 /* AppDelegate.swift */,
@@ -143,37 +125,15 @@
 				95865EB71E031FD3001855D8 /* Info.plist */,
 				95FFF1901E0B555900A1164A /* Extensions.swift */,
 			);
-			path = desktop;
-			sourceTree = "<group>";
-		};
-		95865EBF1E031FD3001855D8 /* desktopTests */ = {
-			isa = PBXGroup;
-			children = (
-				95865EC01E031FD3001855D8 /* desktopTests.swift */,
-				95865EC21E031FD3001855D8 /* Info.plist */,
-			);
-			path = desktopTests;
-			sourceTree = "<group>";
-		};
-		95865ECA1E031FD3001855D8 /* desktopUITests */ = {
-			isa = PBXGroup;
-			children = (
-				95865ECB1E031FD3001855D8 /* desktopUITests.swift */,
-				95865ECD1E031FD3001855D8 /* Info.plist */,
-			);
-			path = desktopUITests;
+			path = conkme;
 			sourceTree = "<group>";
 		};
 		95F0839D1E076A1F0082C57F /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				957ECB591E0A393F002D0648 /* CircleView.swift */,
 				95F0839B1E0748520082C57F /* WidgetBackgroundView.swift */,
 				95F083941E0739A70082C57F /* Widget.swift */,
-				95F083921E0739A70082C57F /* TimerWidget.swift */,
-				95F0839E1E076A330082C57F /* WeatherWidget.swift */,
-				955ABCC71E11CDB0007C37E8 /* BatteryWidget.swift */,
-				953E3EEE1E50DFC200AA5AC6 /* ReminderWidget.swift */,
+				FAA4DC401EA0C993002A25AB /* BarWidget.swift */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -181,7 +141,6 @@
 		95FCD35C1E514B1E0043C8AA /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				95FCD35D1E514B300043C8AA /* LocationManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -189,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95865EAA1E031FD2001855D8 /* desktop */ = {
+		95865EAA1E031FD2001855D8 /* conkme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95865ED01E031FD3001855D8 /* Build configuration list for PBXNativeTarget "desktop" */;
+			buildConfigurationList = 95865ED01E031FD3001855D8 /* Build configuration list for PBXNativeTarget "conkme" */;
 			buildPhases = (
 				95865EA71E031FD2001855D8 /* Sources */,
 				95865EA81E031FD2001855D8 /* Frameworks */,
@@ -201,14 +160,14 @@
 			);
 			dependencies = (
 			);
-			name = desktop;
-			productName = desktop;
-			productReference = 95865EAB1E031FD3001855D8 /* desktop.app */;
+			name = conkme;
+			productName = conkme;
+			productReference = 95865EAB1E031FD3001855D8 /* conkme.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95865EBB1E031FD3001855D8 /* desktopTests */ = {
+		95865EBB1E031FD3001855D8 /* conkmeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95865ED31E031FD3001855D8 /* Build configuration list for PBXNativeTarget "desktopTests" */;
+			buildConfigurationList = 95865ED31E031FD3001855D8 /* Build configuration list for PBXNativeTarget "conkmeTests" */;
 			buildPhases = (
 				95865EB81E031FD3001855D8 /* Sources */,
 				95865EB91E031FD3001855D8 /* Frameworks */,
@@ -219,14 +178,14 @@
 			dependencies = (
 				95865EBE1E031FD3001855D8 /* PBXTargetDependency */,
 			);
-			name = desktopTests;
-			productName = desktopTests;
-			productReference = 95865EBC1E031FD3001855D8 /* desktopTests.xctest */;
+			name = conkmeTests;
+			productName = conkmeTests;
+			productReference = 95865EBC1E031FD3001855D8 /* conkmeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		95865EC61E031FD3001855D8 /* desktopUITests */ = {
+		95865EC61E031FD3001855D8 /* conkmeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95865ED61E031FD3001855D8 /* Build configuration list for PBXNativeTarget "desktopUITests" */;
+			buildConfigurationList = 95865ED61E031FD3001855D8 /* Build configuration list for PBXNativeTarget "conkmeUITests" */;
 			buildPhases = (
 				95865EC31E031FD3001855D8 /* Sources */,
 				95865EC41E031FD3001855D8 /* Frameworks */,
@@ -237,9 +196,9 @@
 			dependencies = (
 				95865EC91E031FD3001855D8 /* PBXTargetDependency */,
 			);
-			name = desktopUITests;
-			productName = desktopUITests;
-			productReference = 95865EC71E031FD3001855D8 /* desktopUITests.xctest */;
+			name = conkmeUITests;
+			productName = conkmeUITests;
+			productReference = 95865EC71E031FD3001855D8 /* conkmeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +209,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = rvarma;
+				ORGANIZATIONNAME = de.andinfinity;
 				TargetAttributes = {
 					95865EAA1E031FD2001855D8 = {
 						CreatedOnToolsVersion = 8.2;
@@ -272,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95865EA61E031FD2001855D8 /* Build configuration list for PBXProject "desktop" */;
+			buildConfigurationList = 95865EA61E031FD2001855D8 /* Build configuration list for PBXProject "conkme" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -285,9 +244,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95865EAA1E031FD2001855D8 /* desktop */,
-				95865EBB1E031FD3001855D8 /* desktopTests */,
-				95865EC61E031FD3001855D8 /* desktopUITests */,
+				95865EAA1E031FD2001855D8 /* conkme */,
+				95865EBB1E031FD3001855D8 /* conkmeTests */,
+				95865EC61E031FD3001855D8 /* conkmeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,18 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F083971E0739A70082C57F /* TimerWidget.swift in Sources */,
-				95F0839F1E076A330082C57F /* WeatherWidget.swift in Sources */,
 				95865EAF1E031FD3001855D8 /* AppDelegate.swift in Sources */,
 				95F083961E0739A70082C57F /* SubDesktopWindow.swift in Sources */,
-				953E3EEF1E50DFC200AA5AC6 /* ReminderWidget.swift in Sources */,
 				95FFF1911E0B555900A1164A /* Extensions.swift in Sources */,
 				95F083981E0739A70082C57F /* UserInterfaceConstants.swift in Sources */,
-				955ABCC81E11CDB0007C37E8 /* BatteryWidget.swift in Sources */,
-				95FCD35E1E514B300043C8AA /* LocationManager.swift in Sources */,
+				FAA4DC411EA0C993002A25AB /* BarWidget.swift in Sources */,
 				95F0839C1E0748520082C57F /* WidgetBackgroundView.swift in Sources */,
 				95F083991E0739A70082C57F /* Widget.swift in Sources */,
-				957ECB5A1E0A393F002D0648 /* CircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95865EC11E031FD3001855D8 /* desktopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95865ECC1E031FD3001855D8 /* desktopUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,12 +311,12 @@
 /* Begin PBXTargetDependency section */
 		95865EBE1E031FD3001855D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95865EAA1E031FD2001855D8 /* desktop */;
+			target = 95865EAA1E031FD2001855D8 /* conkme */;
 			targetProxy = 95865EBD1E031FD3001855D8 /* PBXContainerItemProxy */;
 		};
 		95865EC91E031FD3001855D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95865EAA1E031FD2001855D8 /* desktop */;
+			target = 95865EAA1E031FD2001855D8 /* conkme */;
 			targetProxy = 95865EC81E031FD3001855D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,11 +430,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = X79K576HGV;
-				INFOPLIST_FILE = desktop/Info.plist;
+				INFOPLIST_FILE = conkme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rvarma.desktop;
+				PRODUCT_BUNDLE_IDENTIFIER = de.andinfinity.conkbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "desktop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "conkme-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -495,11 +447,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = X79K576HGV;
-				INFOPLIST_FILE = desktop/Info.plist;
+				INFOPLIST_FILE = conkme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rvarma.desktop;
+				PRODUCT_BUNDLE_IDENTIFIER = de.andinfinity.conkbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "desktop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "conkme-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -511,12 +463,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = X79K576HGV;
-				INFOPLIST_FILE = desktopTests/Info.plist;
+				INFOPLIST_FILE = conkmeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rvarma.desktopTests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.andinfinity.conkmeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desktop.app/Contents/MacOS/desktop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/conkme.app/Contents/MacOS/conkme";
 			};
 			name = Debug;
 		};
@@ -527,12 +479,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = X79K576HGV;
-				INFOPLIST_FILE = desktopTests/Info.plist;
+				INFOPLIST_FILE = conkmeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rvarma.desktopTests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.andinfinity.conkmeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desktop.app/Contents/MacOS/desktop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/conkme.app/Contents/MacOS/conkme";
 			};
 			name = Release;
 		};
@@ -542,12 +494,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = X79K576HGV;
-				INFOPLIST_FILE = desktopUITests/Info.plist;
+				INFOPLIST_FILE = conkmeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rvarma.desktopUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andinfinity.conkmeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = desktop;
+				TEST_TARGET_NAME = conkme;
 			};
 			name = Debug;
 		};
@@ -557,19 +509,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = X79K576HGV;
-				INFOPLIST_FILE = desktopUITests/Info.plist;
+				INFOPLIST_FILE = conkmeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rvarma.desktopUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.andinfinity.conkmeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = desktop;
+				TEST_TARGET_NAME = conkme;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95865EA61E031FD2001855D8 /* Build configuration list for PBXProject "desktop" */ = {
+		95865EA61E031FD2001855D8 /* Build configuration list for PBXProject "conkme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95865ECE1E031FD3001855D8 /* Debug */,
@@ -578,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95865ED01E031FD3001855D8 /* Build configuration list for PBXNativeTarget "desktop" */ = {
+		95865ED01E031FD3001855D8 /* Build configuration list for PBXNativeTarget "conkme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95865ED11E031FD3001855D8 /* Debug */,
@@ -587,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95865ED31E031FD3001855D8 /* Build configuration list for PBXNativeTarget "desktopTests" */ = {
+		95865ED31E031FD3001855D8 /* Build configuration list for PBXNativeTarget "conkmeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95865ED41E031FD3001855D8 /* Debug */,
@@ -596,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95865ED61E031FD3001855D8 /* Build configuration list for PBXNativeTarget "desktopUITests" */ = {
+		95865ED61E031FD3001855D8 /* Build configuration list for PBXNativeTarget "conkmeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95865ED71E031FD3001855D8 /* Debug */,

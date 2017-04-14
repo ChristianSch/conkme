@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E154a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
-        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="conkme" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menu" destination="Skp-eN-siV" id="U1t-hW-utq"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="desktop" id="1Xt-HY-uBw">
+                            <menuItem title="conkme" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="desktop" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="conkme" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About desktop" id="5kV-Vb-QxS">
+                                        <menuItem title="About conkme" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -32,7 +36,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide desktop" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide conkme" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -50,7 +54,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit desktop" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit conkme" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -643,7 +647,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="desktop Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="conkme Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -657,8 +661,16 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="desktop" customModuleProvider="target"/>
-                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="Skp-eN-siV">
+                    <items>
+                        <menuItem title="Quit" id="Ec1-ff-Gjr">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="quit:" target="Voe-Tx-rLC" id="GTS-2y-ybN"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="-87" y="10"/>
         </scene>
@@ -666,7 +678,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="SubWindowDesktop" customModule="desktop" customModuleProvider="target">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="SubWindowDesktop" customModule="conkme" customModuleProvider="target">
                         <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -688,32 +700,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="842" height="738"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="znA-as-Q5f">
-                                <rect key="frame" x="0.0" y="0.0" width="550" height="150"/>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="nmX-RM-52d">
+                                <rect key="frame" x="8" y="707" width="826" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="550" id="YQ6-AV-DbH"/>
-                                    <constraint firstAttribute="height" constant="150" id="aa0-0Y-JEH"/>
+                                    <constraint firstAttribute="height" constant="23" id="nOB-sC-Yef"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="q0G-Og-D6S" kind="embed" id="AMP-ZU-ZXG"/>
-                                </connections>
-                            </containerView>
-                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="X8D-ov-93I">
-                                <rect key="frame" x="0.0" y="568" width="350" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="QjX-k7-6Dn"/>
-                                    <constraint firstAttribute="height" constant="150" id="frI-u7-CFa"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="78J-Ak-ZpY" kind="embed" id="qiB-mT-Imy"/>
+                                    <segue destination="oAW-Wx-Y5T" kind="embed" id="R2U-Am-oGW"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="X8D-ov-93I" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="9Bm-tS-RfR"/>
-                            <constraint firstItem="X8D-ov-93I" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Efb-au-SUl"/>
-                            <constraint firstAttribute="bottom" secondItem="znA-as-Q5f" secondAttribute="bottom" id="mpZ-5e-6DJ"/>
-                            <constraint firstItem="znA-as-Q5f" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="uDS-mF-OJn"/>
+                            <constraint firstItem="nmX-RM-52d" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="AvG-yV-jYX"/>
+                            <constraint firstAttribute="trailing" secondItem="nmX-RM-52d" secondAttribute="trailing" constant="8" id="V5L-Kf-bsB"/>
+                            <constraint firstItem="nmX-RM-52d" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="oD6-LX-j0M"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -721,486 +721,72 @@
             </objects>
             <point key="canvasLocation" x="-87" y="913"/>
         </scene>
-        <!--Timer Widget-->
-        <scene sceneID="sAy-0I-dhv">
+        <!--Bar Widget-->
+        <scene sceneID="qup-x7-zc3">
             <objects>
-                <viewController id="q0G-Og-D6S" customClass="TimerWidget" customModule="desktop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="g8G-GA-kkr" customClass="WidgetBackgroundView" customModule="desktop" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="223"/>
+                <viewController id="oAW-Wx-Y5T" customClass="BarWidget" customModule="conkme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5SP-ZS-ns5" customClass="WidgetBackgroundView" customModule="conkme" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="766" height="23"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NK-8S-Ua8">
-                                <rect key="frame" x="84" y="36" width="283" height="151"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="bY7-iA-biW">
-                                    <font key="font" metaFont="systemUltraLight" size="128"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odd-Co-j35">
+                                <rect key="frame" x="1" y="3" width="42" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="kwm1" id="5Cp-jP-64b">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkR-Za-sFR">
+                                <rect key="frame" x="728" y="3" width="37" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="time" id="cRE-77-4la">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-uq-Vce">
+                                <rect key="frame" x="671" y="3" width="55" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="battery" id="DUW-dU-7gj">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETH-cp-ycC">
+                                <rect key="frame" x="361" y="3" width="44" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="kwm2" id="pQd-zt-XeL">
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="1NK-8S-Ua8" firstAttribute="centerX" secondItem="g8G-GA-kkr" secondAttribute="centerX" id="HGX-Uv-LOv"/>
-                            <constraint firstItem="1NK-8S-Ua8" firstAttribute="centerY" secondItem="g8G-GA-kkr" secondAttribute="centerY" id="Rje-J4-VeR"/>
+                            <constraint firstItem="mkR-Za-sFR" firstAttribute="top" secondItem="5SP-ZS-ns5" secondAttribute="top" constant="2" id="Jmp-hz-lJo"/>
+                            <constraint firstItem="odd-Co-j35" firstAttribute="top" secondItem="5SP-ZS-ns5" secondAttribute="top" constant="2" id="M3G-bZ-qtf"/>
+                            <constraint firstItem="mkR-Za-sFR" firstAttribute="leading" secondItem="4Wc-uq-Vce" secondAttribute="trailing" constant="6" id="OMZ-L0-c51"/>
+                            <constraint firstAttribute="bottom" secondItem="mkR-Za-sFR" secondAttribute="bottom" constant="3" id="Psn-PI-FKt"/>
+                            <constraint firstAttribute="bottom" secondItem="4Wc-uq-Vce" secondAttribute="bottom" constant="3" id="Ujy-JR-PaU"/>
+                            <constraint firstItem="odd-Co-j35" firstAttribute="leading" secondItem="5SP-ZS-ns5" secondAttribute="leading" constant="3" id="VxQ-dx-TjP"/>
+                            <constraint firstAttribute="trailing" secondItem="mkR-Za-sFR" secondAttribute="trailing" constant="3" id="XDJ-zz-ipt"/>
+                            <constraint firstItem="ETH-cp-ycC" firstAttribute="centerX" secondItem="5SP-ZS-ns5" secondAttribute="centerX" id="abp-sm-bpQ"/>
+                            <constraint firstAttribute="bottom" secondItem="odd-Co-j35" secondAttribute="bottom" constant="3" id="eXz-eM-lQh"/>
+                            <constraint firstItem="ETH-cp-ycC" firstAttribute="top" secondItem="5SP-ZS-ns5" secondAttribute="top" constant="2" id="lMR-cG-kAH"/>
+                            <constraint firstAttribute="bottom" secondItem="ETH-cp-ycC" secondAttribute="bottom" constant="3" id="nlt-iT-zfr"/>
+                            <constraint firstItem="4Wc-uq-Vce" firstAttribute="top" secondItem="5SP-ZS-ns5" secondAttribute="top" constant="2" id="oSb-xy-f4L"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="timeLabel" destination="1NK-8S-Ua8" id="ca0-KT-4Ph"/>
+                        <outlet property="batteryLabel" destination="4Wc-uq-Vce" id="BtO-21-zEJ"/>
+                        <outlet property="kwmModeLabel" destination="odd-Co-j35" id="cok-Hg-Yst"/>
+                        <outlet property="kwmSpaceLabel" destination="pQd-zt-XeL" id="Doe-5H-xCK"/>
+                        <outlet property="timeLabel" destination="mkR-Za-sFR" id="WF9-vu-8nd"/>
                     </connections>
                 </viewController>
-                <customObject id="UAe-aq-klh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="zmF-dO-QnP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="490.5"/>
-        </scene>
-        <!--Weather Widget-->
-        <scene sceneID="MyR-em-YPw">
-            <objects>
-                <viewController id="78J-Ak-ZpY" customClass="WeatherWidget" customModule="desktop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="8JM-QZ-fHF" customClass="WidgetBackgroundView" customModule="desktop" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vof-Nw-Rwb">
-                                <rect key="frame" x="20" y="63" width="311" height="24"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Unable to determine device location" id="4ne-5g-yqp">
-                                    <font key="font" metaFont="systemThin" size="20"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <stackView distribution="equalSpacing" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHQ-LC-Exj">
-                                <rect key="frame" x="16" y="11" width="318" height="133"/>
-                                <subviews>
-                                    <stackView distribution="equalCentering" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HfM-Sl-uLG">
-                                        <rect key="frame" x="0.0" y="69" width="318" height="64"/>
-                                        <subviews>
-                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-6a-RYo">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="l4w-dz-OLj"/>
-                                                    <constraint firstAttribute="height" constant="64" id="tww-aQ-wQW"/>
-                                                </constraints>
-                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="clear-day" id="aTi-Fo-Lmz"/>
-                                            </imageView>
-                                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-sa-EKb">
-                                                <rect key="frame" x="78" y="10" width="64" height="45"/>
-                                                <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fZ-mP-2XY">
-                                                        <rect key="frame" x="20" y="29" width="25" height="16"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="min" id="CLR-2P-Y7Q">
-                                                            <font key="font" metaFont="cellTitle"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyW-YK-iVQ">
-                                                        <rect key="frame" x="-2" y="0.0" width="68" height="29"/>
-                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="min-temp" id="SUk-uR-iA4">
-                                                            <font key="font" metaFont="systemThin" size="24"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="PTo-qf-FfM"/>
-                                                </constraints>
-                                                <visibilityPriorities>
-                                                    <real value="1000"/>
-                                                    <integer value="1000"/>
-                                                </visibilityPriorities>
-                                                <customSpacing>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                </customSpacing>
-                                            </stackView>
-                                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzL-zY-yJJ">
-                                                <rect key="frame" x="150" y="10" width="96" height="45"/>
-                                                <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NW-3S-Xky">
-                                                        <rect key="frame" x="25" y="29" width="46" height="16"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="current" id="aOY-IN-nS6">
-                                                            <font key="font" metaFont="cellTitle"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDJ-rM-Y3y">
-                                                        <rect key="frame" x="14" y="0.0" width="68" height="29"/>
-                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Temp" id="yby-kU-ocv">
-                                                            <font key="font" metaFont="system" size="24"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="96" id="dP0-x3-s4m"/>
-                                                </constraints>
-                                                <visibilityPriorities>
-                                                    <integer value="1000"/>
-                                                    <integer value="1000"/>
-                                                </visibilityPriorities>
-                                                <customSpacing>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                </customSpacing>
-                                            </stackView>
-                                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLP-58-ten">
-                                                <rect key="frame" x="254" y="10" width="64" height="45"/>
-                                                <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-pf-L62">
-                                                        <rect key="frame" x="18" y="29" width="28" height="16"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="max" id="oa8-Iu-joC">
-                                                            <font key="font" metaFont="cellTitle"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0L-9m-h0Q">
-                                                        <rect key="frame" x="-2" y="0.0" width="68" height="29"/>
-                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="max-temp" id="fXB-Wa-Vd3">
-                                                            <font key="font" metaFont="systemThin" size="24"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="qgK-n6-JHA"/>
-                                                </constraints>
-                                                <visibilityPriorities>
-                                                    <integer value="1000"/>
-                                                    <integer value="1000"/>
-                                                </visibilityPriorities>
-                                                <customSpacing>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                </customSpacing>
-                                            </stackView>
-                                        </subviews>
-                                        <visibilityPriorities>
-                                            <real value="1000"/>
-                                            <integer value="1000"/>
-                                            <integer value="1000"/>
-                                            <integer value="1000"/>
-                                        </visibilityPriorities>
-                                        <customSpacing>
-                                            <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                        </customSpacing>
-                                    </stackView>
-                                    <stackView distribution="fillProportionally" orientation="horizontal" alignment="top" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fU4-rY-BcM">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="68"/>
-                                        <subviews>
-                                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANw-wx-ZQE">
-                                                <rect key="frame" x="0.0" y="0.0" width="246" height="68"/>
-                                                <subviews>
-                                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqH-PO-mcW">
-                                                        <rect key="frame" x="0.0" y="51" width="101" height="17"/>
-                                                        <subviews>
-                                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVP-qL-AlM">
-                                                                <rect key="frame" x="0.0" y="1" width="16" height="16"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="16" id="LLj-hN-VOZ"/>
-                                                                    <constraint firstAttribute="height" constant="16" id="ccc-zq-uKz"/>
-                                                                </constraints>
-                                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sunrise" id="CU0-NS-8Y3"/>
-                                                            </imageView>
-                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gq-Kn-nOh">
-                                                                <rect key="frame" x="22" y="0.0" width="81" height="17"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="sunrise-time" id="MRG-PR-wtB">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                        </subviews>
-                                                        <visibilityPriorities>
-                                                            <integer value="1000"/>
-                                                            <integer value="1000"/>
-                                                        </visibilityPriorities>
-                                                        <customSpacing>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                        </customSpacing>
-                                                    </stackView>
-                                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-pD-F44">
-                                                        <rect key="frame" x="0.0" y="34" width="97" height="17"/>
-                                                        <subviews>
-                                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-8g-8oR">
-                                                                <rect key="frame" x="0.0" y="1" width="16" height="16"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="16" id="Tue-Kd-jem"/>
-                                                                    <constraint firstAttribute="width" constant="16" id="w8f-fZ-Sld"/>
-                                                                </constraints>
-                                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sunset" id="DEn-In-B5c"/>
-                                                            </imageView>
-                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zry-Mv-q58">
-                                                                <rect key="frame" x="22" y="0.0" width="77" height="17"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="sunset-time" id="ffq-SA-gZM">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                        </subviews>
-                                                        <visibilityPriorities>
-                                                            <integer value="1000"/>
-                                                            <integer value="1000"/>
-                                                        </visibilityPriorities>
-                                                        <customSpacing>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                        </customSpacing>
-                                                    </stackView>
-                                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dV-yP-mod">
-                                                        <rect key="frame" x="0.0" y="17" width="77" height="17"/>
-                                                        <subviews>
-                                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h1G-0N-hkc">
-                                                                <rect key="frame" x="0.0" y="1" width="16" height="16"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="16" id="I6A-5l-bmh"/>
-                                                                    <constraint firstAttribute="width" constant="16" id="zTR-Uj-hEv"/>
-                                                                </constraints>
-                                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="humidity" id="zoh-qW-JDZ"/>
-                                                            </imageView>
-                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQU-xE-Erc">
-                                                                <rect key="frame" x="22" y="0.0" width="57" height="17"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="humidity" id="ueq-Lr-YJJ">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                        </subviews>
-                                                        <visibilityPriorities>
-                                                            <integer value="1000"/>
-                                                            <integer value="1000"/>
-                                                        </visibilityPriorities>
-                                                        <customSpacing>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                        </customSpacing>
-                                                    </stackView>
-                                                    <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkU-rH-VfA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="17"/>
-                                                        <subviews>
-                                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q00-QT-Ehb">
-                                                                <rect key="frame" x="0.0" y="1" width="16" height="16"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="16" id="DeG-6X-eNc"/>
-                                                                    <constraint firstAttribute="height" constant="16" id="noo-eE-iLX"/>
-                                                                </constraints>
-                                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="compass-n" id="FXj-l4-c4C"/>
-                                                            </imageView>
-                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-rl-6s0">
-                                                                <rect key="frame" x="22" y="0.0" width="74" height="17"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="wind speed" id="UB7-lM-rVw">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                        </subviews>
-                                                        <visibilityPriorities>
-                                                            <integer value="1000"/>
-                                                            <integer value="1000"/>
-                                                        </visibilityPriorities>
-                                                        <customSpacing>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                        </customSpacing>
-                                                    </stackView>
-                                                </subviews>
-                                                <visibilityPriorities>
-                                                    <integer value="1000"/>
-                                                    <integer value="1000"/>
-                                                    <integer value="1000"/>
-                                                    <integer value="1000"/>
-                                                </visibilityPriorities>
-                                                <customSpacing>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                </customSpacing>
-                                            </stackView>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKl-oR-Dbi">
-                                                <rect key="frame" x="260" y="51" width="60" height="17"/>
-                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="summary" id="5fF-mt-Wt4">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
-                                        </subviews>
-                                        <visibilityPriorities>
-                                            <integer value="1000"/>
-                                            <integer value="1000"/>
-                                        </visibilityPriorities>
-                                        <customSpacing>
-                                            <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                        </customSpacing>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="fU4-rY-BcM" firstAttribute="width" secondItem="HfM-Sl-uLG" secondAttribute="width" id="ndV-Hz-etx"/>
-                                    <constraint firstItem="HfM-Sl-uLG" firstAttribute="width" secondItem="bHQ-LC-Exj" secondAttribute="width" id="v0P-Ms-L5C"/>
-                                </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="Vof-Nw-Rwb" firstAttribute="centerX" secondItem="8JM-QZ-fHF" secondAttribute="centerX" id="KH9-de-gKv"/>
-                            <constraint firstItem="Vof-Nw-Rwb" firstAttribute="centerY" secondItem="8JM-QZ-fHF" secondAttribute="centerY" id="KXs-M2-SmM"/>
-                            <constraint firstItem="bHQ-LC-Exj" firstAttribute="top" secondItem="8JM-QZ-fHF" secondAttribute="top" constant="6" id="LZE-zs-dzW"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vof-Nw-Rwb" secondAttribute="trailing" constant="16" id="M7u-Sg-nE8"/>
-                            <constraint firstItem="bHQ-LC-Exj" firstAttribute="leading" secondItem="8JM-QZ-fHF" secondAttribute="leading" constant="16" id="Nr6-9d-brK"/>
-                            <constraint firstAttribute="bottom" secondItem="bHQ-LC-Exj" secondAttribute="bottom" constant="11" id="ZcN-O9-hX4"/>
-                            <constraint firstAttribute="trailing" secondItem="bHQ-LC-Exj" secondAttribute="trailing" constant="16" id="gGE-3E-XC1"/>
-                            <constraint firstItem="Vof-Nw-Rwb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8JM-QZ-fHF" secondAttribute="leading" constant="16" id="qUN-6r-baQ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="curTempLabel" destination="ZDJ-rM-Y3y" id="OT5-Sb-iQ9"/>
-                        <outlet property="humidityLabel" destination="fQU-xE-Erc" id="cDa-yv-fpQ"/>
-                        <outlet property="icon" destination="0U3-6a-RYo" id="bc8-iN-IwS"/>
-                        <outlet property="mainStackView" destination="bHQ-LC-Exj" id="Cw9-kG-Gf0"/>
-                        <outlet property="maxTempLabel" destination="N0L-9m-h0Q" id="5Yi-ga-bPp"/>
-                        <outlet property="minTempLabel" destination="TyW-YK-iVQ" id="mXM-D3-bGA"/>
-                        <outlet property="noLocationLabel" destination="Vof-Nw-Rwb" id="fmH-V8-Qn8"/>
-                        <outlet property="summaryLabel" destination="LKl-oR-Dbi" id="tMG-Xm-IEG"/>
-                        <outlet property="sunriseLabel" destination="2Gq-Kn-nOh" id="JS9-4j-ALQ"/>
-                        <outlet property="sunsetLabel" destination="zry-Mv-q58" id="Bou-Lc-3eR"/>
-                        <outlet property="windChimeIcon" destination="Q00-QT-Ehb" id="god-aq-qmx"/>
-                        <outlet property="windSpeedLabel" destination="CTf-rl-6s0" id="tX2-78-1ip"/>
-                    </connections>
-                </viewController>
-                <customObject id="NVA-8O-QIW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="695" y="738"/>
-        </scene>
-        <!--Battery Widget-->
-        <scene sceneID="rzq-gJ-qRR">
-            <objects>
-                <viewController id="jRc-LT-sud" customClass="BatteryWidget" customModule="desktop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="yvI-Py-rxL" customClass="WidgetBackgroundView" customModule="desktop" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="mYp-1I-mbs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="745" y="1022"/>
-        </scene>
-        <!--Reminder Widget-->
-        <scene sceneID="f0i-eR-fRl">
-            <objects>
-                <viewController id="eRe-se-O3K" customClass="ReminderWidget" customModule="desktop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="dSt-hb-UKJ" customClass="WidgetBackgroundView" customModule="desktop" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH9-Qr-eFz">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <clipView key="contentView" focusRingType="none" copiesOnScroll="NO" id="fIa-Gh-PZL">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" typeSelect="NO" rowSizeStyle="automatic" headerView="6Ec-aq-Kuf" viewBased="YES" id="FsD-JI-zoe">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="277"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <size key="intercellSpacing" width="3" height="2"/>
-                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
-                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                            <tableColumns>
-                                                <tableColumn width="445" minWidth="445" maxWidth="445" id="8rf-3l-l07">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Reminder List">
-                                                        <font key="font" metaFont="smallSystem"/>
-                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                                    </tableHeaderCell>
-                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" title="Text Cell" id="zxV-Yk-mAv">
-                                                        <font key="font" metaFont="system"/>
-                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    </textFieldCell>
-                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                    <prototypeCellViews>
-                                                        <tableCellView id="pNb-AS-HtO">
-                                                            <rect key="frame" x="1" y="1" width="445" height="17"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                            <subviews>
-                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9q2-Z8-QAz">
-                                                                    <rect key="frame" x="3" y="0.0" width="17" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="qzS-Pb-iYu"/>
-                                                                </imageView>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGs-l4-mzk">
-                                                                    <rect key="frame" x="25" y="0.0" width="420" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="MdS-2a-Ano">
-                                                                        <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
-                                                                </textField>
-                                                            </subviews>
-                                                            <connections>
-                                                                <outlet property="imageView" destination="9q2-Z8-QAz" id="D2B-So-kd3"/>
-                                                                <outlet property="textField" destination="YGs-l4-mzk" id="NXZ-rJ-Ic6"/>
-                                                            </connections>
-                                                        </tableCellView>
-                                                    </prototypeCellViews>
-                                                </tableColumn>
-                                            </tableColumns>
-                                        </tableView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="7ku-Zj-0et">
-                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="z3T-uU-rx2">
-                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <tableHeaderView key="headerView" id="6Ec-aq-Kuf">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="23"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableHeaderView>
-                            </scrollView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="BH9-Qr-eFz" firstAttribute="top" secondItem="dSt-hb-UKJ" secondAttribute="top" id="8ap-d5-Pyg"/>
-                            <constraint firstAttribute="bottom" secondItem="BH9-Qr-eFz" secondAttribute="bottom" id="Aco-gy-HkK"/>
-                            <constraint firstAttribute="trailing" secondItem="BH9-Qr-eFz" secondAttribute="trailing" id="NYU-F4-rE1"/>
-                            <constraint firstItem="BH9-Qr-eFz" firstAttribute="leading" secondItem="dSt-hb-UKJ" secondAttribute="leading" id="y28-xS-HIh"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="5Xv-WK-xQi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-283" y="1581"/>
+            <point key="canvasLocation" x="882" y="243.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="NSActionTemplate" width="14" height="14"/>
-        <image name="clear-day" width="128" height="128"/>
-        <image name="compass-n" width="128" height="128"/>
-        <image name="humidity" width="128" height="128"/>
-        <image name="sunrise" width="128" height="128"/>
-        <image name="sunset" width="128" height="128"/>
-    </resources>
 </document>

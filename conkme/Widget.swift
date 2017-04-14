@@ -1,6 +1,6 @@
 //
 //  Widget.swift
-//  desktop
+//  conkme
 //
 //  Created by Rauhul Varma on 12/15/16.
 //  Copyright © 2016 rvarma. All rights reserved.
